@@ -18,7 +18,7 @@ export default function Watch() {
   }, [params.movieId]);
 
   const fetchMovie = async (movieId) => {
-    const baseURL = "http://34.227.53.65:8080/api";
+    const baseURL = "https://34.227.53.65:8080/api";
     try {
       setFetching(true);
       const res = await axios.get(baseURL + "/movies/find/" + movieId, {
