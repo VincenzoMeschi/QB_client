@@ -6,7 +6,7 @@ export const authLogin = async (email, password) => {
     password: password,
   };
 
-  const baseURL = "34.227.53.65:8080/api/auth/login";
+  const baseURL = "http://34.227.53.65:8080/api/auth/login";
 
   const config = {
     headers: {
@@ -26,7 +26,7 @@ export const authLogout = () => {
 
 export const authGetCurrentUserInfo = async () => {
   try {
-    const response = await axios.get("34.227.53.65:8080/api/auth", {
+    const response = await axios.get("http://34.227.53.65:8080/api/auth", {
       headers: {
         authorization: window.localStorage.getItem("authorization"),
       },
@@ -58,7 +58,7 @@ export const authRegister = async (email, password, username) => {
     profilePic: img,
   };
 
-  const baseURL = "34.227.53.65:8080/api/auth/register";
+  const baseURL = "http://34.227.53.65:8080/api/auth/register";
 
   const config = {
     headers: {
