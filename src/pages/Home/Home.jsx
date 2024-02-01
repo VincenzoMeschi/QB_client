@@ -43,7 +43,7 @@ const Home = () => {
   return (
     <div className="home">
       <Navbar />
-      {/* <Hero /> */}
+      <Hero />
       {lists.map((list, index) => (
         <List key={index} listIndex={index + "a"} list={list} movies={movies} />
       ))}
