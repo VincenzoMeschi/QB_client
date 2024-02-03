@@ -13,7 +13,7 @@ const Home = () => {
 
   useEffect(() => {
     const getLists = async () => {
-      const baseURL = "https://34.227.53.65:8080/api";
+      const baseURL = "https://api.dothisdrill.com/api";
       try {
         const listres = await axios.get(baseURL + "/lists", {
           headers: {
