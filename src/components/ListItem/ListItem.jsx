@@ -28,10 +28,10 @@ export default function ListItem({ index, listIndex, movieId, movies }) {
   };
 
   return (
-    <div className="listItemWrapper">
+    <div className="listItemWrapper" onClick={handleVideoClick}>
       <div id={`listItem-${index}-${listIndex}`} className="listItem">
         <h3 className="itemTitleOverlay">{title}</h3>
-        <img src={img} onClick={handleVideoClick} alt="" />
+        <img src={img} alt="" />
       </div>
     </div>
   );
